@@ -8,13 +8,13 @@ const pipeTop = new Image();
 const pipeBottom = new Image();
 const ground = new Image();
 
-bg.src = "assets/bg.png";
-birdFrames[0].src = "assets/bird1.png";
-birdFrames[1].src = "assets/bird2.png";
-birdFrames[2].src = "assets/bird3.png";
-pipeTop.src = "assets/pipeTop.png";
-pipeBottom.src = "assets/pipeBottom.png";
-ground.src = "assets/ground.png";
+bg.src = "image/bg.png";
+birdFrames[0].src = "image/bird1.png";
+birdFrames[1].src = "image/bird2.png";
+birdFrames[2].src = "image/bird3.png";
+pipeTop.src = "image/pipeTop.png";
+pipeBottom.src = "image/pipeBottom.png";
+ground.src = "image/ground.png";
 
 let frames = 0;
 let score = 0;
@@ -120,5 +120,6 @@ document.addEventListener("keydown", (e) => {
   if (e.code === "Space") bird.flap();
 });
 document.addEventListener("touchstart", () => bird.flap());
+
 
 loop();
